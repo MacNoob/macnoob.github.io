@@ -1,7 +1,8 @@
 body {
-    background-color: blue;
+    background-color: rgb(13, 13, 14);
     text-align: center;
     color: rgb(243, 241, 238);
+    touch-action: none;
 }
 
 .image {
