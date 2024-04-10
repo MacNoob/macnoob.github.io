@@ -1,13 +1,83 @@
-body {
+/*body {
     background-color: rgb(13, 13, 14);
-    text-align: center;
     color: rgb(243, 241, 238);
     touch-action: none;
+    display;
+    /*overflow: hidden;
+   
+    
+    
 }
 
 .image {
+    align-self: center;
+    justify-content: center;
+    margin-top: 50%;
+    width: 70vw;
+    height: 70vw;
+    overflow: hidden;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}*/
+
+body {
+    background-color: rgb(19, 19, 19);
+    color: rgb(243, 241, 238);
+    height: 100vh;
+    display: flex;
     align-items: center;
-    margin-top: 20%;
-    width: 50em;
-    height: 50em;
+    justify-content: center;
+    transition: transform 0.2s ease;
 }
+
+.buttonHolder{
+    margin:80px auto;
+    width:400px;
+  }
+  
+  
+          .button{
+              background-image: -webkit-linear-gradient(top, #f3b97f, #e4cb65);
+              background-image: linear-gradient(top, #d49f6b, #cbb352);
+              border-radius: 50%;
+              box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, .3), inset 0px 4px 1px 1px rgb(229, 228, 218), inset 0px -3px 1px 1px rgba(204,198,197,.5);
+              
+              height: 40vw;
+              width: 40vw;
+              margin: 0 30px 30px 0;
+              position: relative;			
+              -webkit-transition: all .1s linear;
+              transition: all .1s linear;
+          }
+  
+          .button:after{
+              color:#f0d851;
+              content: "";
+              display: block;
+              font-size: 30px;
+              height: 30px;
+              text-decoration: none;
+              text-shadow: 0px -1px 1px #bdb5b4, 1px 1px 1px white;
+              position: absolute;
+              width: 30px;
+          }
+  
+          .button:hover{
+              background-image: -webkit-linear-gradient(top, #cab15c, #cf8942);
+              background-image: linear-gradient(top, #dcd354, #d7c64a);
+              color:#0088cc;
+          }
+          
+  
+          .button:active{
+              background-image: -webkit-linear-gradient(top, #caa729, #c59d27);
+              background-image: linear-gradient(top, #efedec, #f7f4f4);
+              box-shadow: 0 3px 5px 0 rgba(0,0,0,.4), inset 0px -3px 1px 1px rgba(204,198,197,.5);
+          }
+  
+          .button:active:after{
+              color:#dbd2d2;
+              text-shadow: 0px -1px 1px #bdb5b4, 0px 1px 1px white;
+          }
